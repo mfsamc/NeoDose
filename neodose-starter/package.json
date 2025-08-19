@@ -1,0 +1,13 @@
+{
+  "name": "neodose-starter",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler pages dev .",
+    "d1:create": "wrangler d1 create neodose_db",
+    "d1:schema": "wrangler d1 execute neodose_db --file=./schema.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^3.73.0"
+  }
+}
